@@ -4,7 +4,7 @@ const categoryController = {
   async index(req, res) {
     const data = await Category.find();
 
-    res.status(200).json({ message: data });
+    res.status(200).json(data);
   },
 
   async create(req, res) {
